@@ -214,31 +214,31 @@ html {
 
 .header-nav {
     background: linear-gradient(269.93deg, #2FD3AE 0%, #011D71 100%);
-
 }
 
-.nav {
+.block-real {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-
+    color: #FFFFFF;
 }
 
 .nav-p {
-    color: #FFFFFF;
     padding-left: 25px;
     padding-top: 27px;
     padding-bottom: 27px;
+
 }
 
 .l {
     background: url(../img/pills\ 1.svg) no-repeat left / 20px 20px;
+
 }
 
 .v {
@@ -273,13 +273,13 @@ html {
     background: url(../img/smartwatch\ 1.svg) no-repeat left / 20px 20px;
 }
 
-.l :hover {
+.block__active {
     position: relative;
-  
+    display: none;
 }
 
 .header-menu {
-    position: absolute; 
+    position: absolute;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 10px 10px;
@@ -287,11 +287,12 @@ html {
     width: 1520px;
     /* display: none; */
     z-index: 1;
+    left: 120px;
+    top: 202px;
 }
 
 
 .header-menu-content {
-    
     padding: 40px;
 }
 
@@ -346,6 +347,7 @@ html {
 
 .promo1 {
     display: flex;
+    justify-content: space-between;
 }
 
 .promo-text {
@@ -1318,7 +1320,6 @@ html {
 
 .los-footer {
     position: absolute;
-
     left: 10%;
     top: -106px;
     height: 190px;
