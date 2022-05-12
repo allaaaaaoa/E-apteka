@@ -52,9 +52,44 @@ html {
 }
 
 .text2 {
+    position: relative;
     padding-left: 25px;
     background: url(../img/menu.svg) left center / 16px 16px no-repeat;
 }
+
+.header-list-block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.header-list {
+    position: absolute;
+    /* display: none; */
+    height: 336px;
+    width: 1920px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 8px;
+    z-index: 1;
+    left: -400px;
+    
+}
+
+.text2:hover>.header-list {
+    display: block;
+}
+.text2>.header-list{
+    display: none;
+}
+
+
+
 
 .header-two-text {
     max-width: 430px;
@@ -230,7 +265,7 @@ html {
 }
 
 .nav-p {
-    padding-left: 25px;
+    padding-left: 35px;
     padding-top: 27px;
     padding-bottom: 27px;
 
@@ -238,7 +273,6 @@ html {
 
 .l {
     background: url(../img/pills\ 1.svg) no-repeat left / 20px 20px;
-
 }
 
 .v {
@@ -278,22 +312,77 @@ html {
     display: none;
 }
 
+.menu-cont:hover>.block__active {
+    display: block;
+}
+
+.menu-cont>.block__active {
+    display: none;
+}
+
+
 .header-menu {
     position: absolute;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 10px 10px;
     height: 612px;
-    width: 1520px;
-    /* display: none; */
+    width: 1580px;
     z-index: 1;
-    left: 120px;
-    top: 202px;
+    left: 0;
+    top: 0;
+}
+
+.h3-header-menu {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    color: #4F4F4F;
 }
 
 
 .header-menu-content {
+    display: flex;
+    justify-content: space-between;
     padding: 40px;
+}
+
+.header-menu-block2 {
+    margin-top: 47px;
+    margin-left: 57px;
+}
+
+.header-menu-block3 {
+    margin-left: 81px;
+}
+
+.header-menu-block4 {
+    margin-top: 47px;
+    margin-left: 57px;
+}
+
+.header-menu-block5 {
+    margin-left: 40px;
+}
+
+.cards-heard {
+    background: #F7FAFB;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    width: 357px;
+    height: 140px;
+    border-radius: 5px;
+    margin-top: 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 /* ./nav-header */
