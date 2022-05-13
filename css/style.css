@@ -62,29 +62,27 @@ html {
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 200px;
-    padding-right: 200px;
-
 }
 
 .header-list {
     position: absolute;
     /* display: none; */
     height: 336px;
-    width: 1920px;
+    width: 2500px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 10px 10px;
     margin-top: 8px;
     z-index: 1;
-    left: -400px;
-    
+    left: -700px;
+
 }
 
 .text2:hover>.header-list {
     display: block;
 }
-.text2>.header-list{
+
+.text2>.header-list {
     display: none;
 }
 
@@ -619,6 +617,7 @@ html {
 
 
 .menu {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -649,6 +648,23 @@ html {
     font-size: 14px;
     line-height: 16px;
     color: #7C7C7C;
+}
+
+
+.topbut {
+    width: 24px;
+    height: 24px;
+}
+
+.topbut-a {
+   position: fixed;
+    margin-left: 1650px;
+    text-align: center;
+    padding-top: 10px;
+    background: #2FD3AE;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 /* ./MENU */
