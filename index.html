@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аптека.онлайн</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="./js/modal.js" defer></script>
 </head>
 
@@ -16,13 +18,79 @@
         <div class="container">
             <div class="header-one">
                 <div class="header-one-text">
-                    <p class="text1">Москва и область</p>
-                    <div class="text2">
-                         <a href="#" class="modal-btn">Служебные страницы</a>
-                        <div class="header-list">
-                            <div class="border">
-                                
+
+                    <div class="text1">
+                        <a href="#" class="modal-btn1">Москва и область <img src="./img/mosk.svg" alt="city"
+                                class="mosk"></a>
+
+                        <div class="modal-city">
+                            <div class="modal-city-window">
+
+                                <div class="modal-title-block">
+                                    <h3 class="h3-modal-title">Выбор города</h3>
+                                    <div class="close-city">
+                                        <a href="#" class="close-btn-city modalCity"></a>
+                                    </div>
+                                </div>
+                                <!-- /.modal-title-block -->
+                                <input class="modal-input" type="text" placeholder="Найдите свой город...">
+                                <div class="text-city-name">
+                                    <div class="city-name">
+                                        <p class="city-p city-mosk">Москва</p>
+                                        <p class="city-p">Санкт-Петербург</p>
+                                        <p class="city-p">Нижний Новгород</p>
+                                        <p class="city-p">Ростов-на-Дону</p>
+                                        <p class="city-p">Самара</p>
+                                        <p class="city-p">Казань</p>
+                                    </div>
+                                    <div class="city-name">
+                                        <p class="city-p">Екатеринбург</p>
+                                        <p class="city-p">Тольятти</p>
+                                        <p class="city-p">Омск</p>
+                                        <p class="city-p">Волгоград</p>
+                                        <p class="city-p">Ставрополь</p>
+                                        <p class="city-p">Краснодар</p>
+                                    </div>
+                                    <div class="city-name">
+                                        <p class="city-p">Воронеж</p>
+                                        <p class="city-p">Уфа</p>
+                                        <p class="city-p">Ярославль</p>
+                                        <p class="city-p">Саратов</p>
+                                        <p class="city-p">Ижевск</p>
+                                        <p class="city-p">Челябинск</p>
+                                    </div>
+                                    <div class="city-name">
+                                        <p class="city-p">Екатеринбург</p>
+                                        <p class="city-p">Тольятти</p>
+                                        <p class="city-p">Омск</p>
+                                        <p class="city-p">Волгоград</p>
+                                        <p class="city-p">Ставрополь</p>
+                                        <p class="city-p">Краснодар</p>
+                                    </div>
+                                    <div class="city-name">
+                                        <p class="city-p">Воронеж</p>
+                                        <p class="city-p">Уфа</p>
+                                        <p class="city-p">Ярославль</p>
+                                        <p class="city-p">Саратов</p>
+                                        <p class="city-p">Ижевск</p>
+                                        <p class="city-p">Челябинск</p>
+                                    </div>
+                                    <!-- /.city-name -->
+                                </div>
+                                <!-- /.text-city-name-->
                             </div>
+                            <!-- /.modal-city-window -->
+                        </div>
+                        <!-- /.modal-city -->
+                    </div>
+                    <!-- /.text1 -->
+
+                    <div class="text2">
+                        <a href="#" class="modal-btn">Служебные страницы</a>
+                        <div class="header-list">
+
+                            <div class="border"></div>
+
                             <div class="header-list-block container">
                                 <div class="list1">
                                     <h3 class="h3-header-menu">Интернет-заказ</h3>
@@ -91,9 +159,40 @@
                     <!-- /.text2 -->
                 </div>
                 <!-- /.header-one-text -->
+
                 <div class="header-two-text">
-                    <p class="text3">Избранное</p>
-                    <p class="text4">Личный кабинет</p>
+                    <a href="#" class="text3">Избранное</a>
+
+                  
+                  
+                    <div class="text4">
+                    <a href="#" class="modal-btn4">Личный кабинет</a>
+
+                    <div class="modal-cabinet">
+                        <div class="modal-window-cabinet">
+                            <div class="modal-title-block">
+                                <h3 class="h3-modal-title">Войти</h3>
+                                <a href="#" class="s-cabinet">Регистрация</a>
+                                <div class="close-cabinet">
+                                    <a href="#" class="close-btn-cabinet"></a>
+                                </div>
+                            </div>
+                            <!-- /.modal-title-block -->
+                            <p class="p-cabinet">Оставьте ваши данные и мы свяжемся с вами. Мы не занимаемся рассылкой рекламных сообщений, а так же не передаем контактные данные третьим лицам</p>
+
+                            <input type="text" placeholder="Ваш e-mail" class="cabinet-input">
+                            <input type="text" placeholder="Пароль" class="cabinet-input">
+
+                            <div class="button-block-cabinet">
+                                <button class="button-cab">Войти</button>
+                                <p class="p-cabinet-but">Нажимая на кнопку, вы соглашаетесь на обработку <span class="span-cab">персональных данных</span> </p>
+                            </div>
+                        </div>
+                        <!-- /.modal-window-cabinet -->
+                    </div>
+                    <!-- /.modal-cabinet -->
+                  </div>
+                  <!-- /.text4 -->
                 </div>
             </div>
             <!-- /.header-one -->
@@ -460,11 +559,8 @@
                 <p class="menu-p">Мы стараемся держать самые низкие цены</p>
             </div>
         </div>
-         <a href="#" class="topbut-a"><img class="topbut" src="./img/topbutton.svg" alt="topbutton"></a>
+        <a href="#" class="topbut-a"><img class="topbut" src="./img/topbutton.svg" alt="topbutton"></a>
     </div>
-    
-       
-    
     <!-- /.MENU -->
 
     <section class="action container">

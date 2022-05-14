@@ -45,11 +45,134 @@ html {
     justify-content: space-between;
 }
 
+
+
+
 .text1 {
     margin-right: 90px;
-    padding-left: 25px;
-    background: url(../img/plain.svg) left center / 16px 16px no-repeat;
+    width: 175px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
 }
+
+.mosk {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.modal-btn1 {
+    background: url(../img/plain.svg) no-repeat;
+    background-position: 0px;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7894A4;
+    width: 175px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    z-index: 1;
+}
+
+
+.modal-city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.65);
+    z-index: 1;
+}
+
+
+.modal-city-window {
+    padding: 60px;
+    width: 760px;
+    height: 421px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.modal-title-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h3-modal-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.modal-input {
+    background: url(../img/zoom.svg) no-repeat;
+    background-position: 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+    border: 1px solid #E0E0E0;
+    border-radius: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 47px;
+    width: 640px;
+    outline: none;
+}
+
+.text-city-name {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #696A6B;
+    margin-top: 30px;
+}
+
+.city-mosk {
+    color: #71C476;
+}
+
+.close-city {
+    height: 12px;
+    width: 12px;
+}
+
+.close-btn-city {
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/x.svg) no-repeat center;
+
+}
+
+
+
+
 
 .text2 {
     position: relative;
@@ -57,7 +180,7 @@ html {
     height: 24px;
     display: flex;
     align-items: center;
-z-index: 1;
+    z-index: 1;
 }
 
 .modal-btn {
@@ -77,12 +200,13 @@ z-index: 1;
     justify-content: right;
     z-index: 1;
 }
-.modal-btn:focus-within{
+
+.modal-btn:focus-within {
     background: url(../img/green-close.svg) no-repeat #fff;
     background-position: 0px;
     color: #828282;
-    }
-    
+}
+
 .header-list-block {
     display: flex;
     justify-content: space-between;
@@ -102,6 +226,7 @@ z-index: 1;
     left: -700px;
     top: 20px;
 }
+
 .border {
     width: 225px;
     height: 40px;
@@ -111,10 +236,12 @@ z-index: 1;
     background: #FFFFFF;
     border-radius: 5px 5px 0px 0px;
 }
+
 .close {
     height: 12px;
     width: 12px;
 }
+
 .close-btn {
     padding-top: 1px;
     padding-left: 8px;
@@ -123,7 +250,7 @@ z-index: 1;
     height: 12px;
     width: 12px;
     background: url(../img/x.svg) no-repeat center;
-    
+
 }
 
 
@@ -138,14 +265,154 @@ z-index: 1;
 }
 
 .text3 {
+    width: 105px;
     margin-right: 90px;
     padding-right: 25px;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7894A4;
     background: url(../img/heart.svg) right center / 16px 16px no-repeat;
 }
 
+
+
+
+
 .text4 {
     padding-right: 25px;
-    background: url(../img/men.svg) right center / 16px 16px no-repeat;
+}
+
+.modal-btn4 {
+    background: url(../img/men.svg) no-repeat right center;
+    background-position: right;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7894A4;
+    width: 145px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    z-index: 1;
+}
+
+.modal-cabinet {
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.65);
+    z-index: 1;
+}
+
+.modal-window-cabinet {
+
+    width: 570px;
+    height: 444px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.s-cabinet {
+    margin-left: -200px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2FD3AE;
+}
+
+.p-cabinet {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #828282;
+    margin-bottom: 26px;
+}
+
+.cabinet-input {
+    padding-left: 20px;
+    width: 450px;
+    height: 50px;
+    border: 1px solid #C7CFE3;
+    border-radius: 30px;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+.button-block-cabinet {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-cab {
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #2FD3AE;
+    box-shadow: 0px 40px 40px rgba(47, 211, 174, 0.2);
+    border-radius: 50px;
+    border: none;
+    padding-top: 17px;
+    padding-left: 57px;
+    padding-right: 57px;
+    padding-bottom: 17px;
+    cursor: pointer;
+}
+
+.p-cabinet-but {
+    width: 270px;
+    text-align: justify;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.span-cab {
+    text-decoration-line: underline;
+    color: #2FD3AE;
+    cursor: pointer;
+}
+
+.close-cabinet {
+    height: 12px;
+    width: 12px;
+}
+
+.close-btn-cabinet {
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/x.svg) no-repeat center;
+
 }
 
 /* ./haeder1 */
