@@ -85,6 +85,7 @@ html {
 
 .modal-city {
     display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -176,6 +177,7 @@ html {
 
 .text2 {
     position: relative;
+    display: none;
     width: 183px;
     height: 24px;
     display: flex;
@@ -304,7 +306,7 @@ html {
 
 .modal-cabinet {
     display: flex;
-    /* display: none; */
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -317,7 +319,6 @@ html {
 }
 
 .modal-window-cabinet {
-
     width: 570px;
     height: 444px;
     background: #FFFFFF;
@@ -467,13 +468,17 @@ html {
 }
 
 .header-two-tel {
-    margin-left: 43px;
     display: flex;
-    max-width: 650px;
+    justify-content: space-between;
+    width: 730px;
 }
 
-.email {
-    background: url(../img/email.svg) no-repeat left / 20px 20px;
+.tel-text-email {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 210px;
+    height: 46px;
 }
 
 .tel {
@@ -481,18 +486,17 @@ html {
     margin-left: 30px;
 }
 
-.tel-text {
-    padding-left: 30px;
-}
 
-.tel-h2 {
-    margin-top: 7px;
+.tel-h2-e {
+    background: url(../img/email.svg) no-repeat;
+    background-position: left;
+    padding-left: 40px;
     font-family: 'Roboto';
-    font-style: normal;
+    font-weight: 700;
     font-size: 18px;
-    line-height: 150%;
     text-transform: uppercase;
     color: #011D71;
+    text-decoration: none;
 }
 
 .tel-p {
@@ -500,8 +504,267 @@ html {
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
-    line-height: 13px;
     color: #7894A4;
+    cursor: pointer;
+    text-transform: none;
+}
+
+
+
+.tel-h2-t {
+    background: url(../img/tel.svg) no-repeat;
+    background-position: left;
+    padding-left: 40px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #011D71;
+    text-decoration: none;
+}
+
+
+
+.tel-h2-t2 {
+    background: url(../img/tel.svg) no-repeat;
+    background-position: left;
+    padding-left: 40px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #011D71;
+    text-decoration: none;
+}
+
+
+
+.modal-email {
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 18, 18, 0.73);
+    z-index: 1;
+}
+
+.modal-window-email {
+    width: 810px;
+    height: 421px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.close-email {
+    height: 12px;
+    width: 12px;
+}
+
+.close-btn-email {
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/x.svg) no-repeat center;
+}
+
+.p-email {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #828282;
+    margin-bottom: 30px;
+}
+
+.input-email {
+    width: 330px;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 30px;
+}
+
+.problem {
+    width: 690px;
+}
+
+.block-button-email {
+    display: flex;
+
+    align-items: center;
+}
+
+.button-email {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #2FD3AE;
+    box-shadow: 0px 40px 40px rgba(47, 211, 174, 0.2);
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+.p-button {
+    margin-left: 30px;
+    width: 330px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+}
+
+.span-button-e {
+    text-decoration-line: underline;
+    color: #2FD3AE;
+}
+
+
+
+.tel-text-tel {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 210px;
+    height: 46px;
+}
+
+.modal-tel {
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 18, 18, 0.73);
+    z-index: 1;
+}
+
+
+.modal-window-tel {
+    width: 810px;
+    height: 317px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.close-tel {
+    height: 12px;
+    width: 12px;
+}
+
+.close-btn-tel {
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/x.svg) no-repeat center;
+}
+
+.block-input-tel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-tel {
+    padding-left: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 30px;
+    width: 220px;
+    height: 50px;
+    color: #828282;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    outline: none;
+}
+
+.p-modal-tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+}
+
+.tel-text-tel2 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: 210px;
+    height: 46px;
+}
+
+.modal-tel2 {
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 18, 18, 0.73);
+    z-index: 1;
+}
+
+.modal-window-tel2 {
+    width: 810px;
+    height: 317px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.close-tel2 {
+    height: 12px;
+    width: 12px;
+}
+
+.close-btn-tel2 {
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/x.svg) no-repeat center;
 }
 
 /* ./header-tel */
@@ -512,12 +775,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 300px;
-    width: 100%;
+    width: 370px;
     margin-left: 30px;
 }
 
 .button-header {
+    width: 230px;
     background: #2FD3AE;
     border: 0;
     box-shadow: 0px 5px 10px rgba(47, 211, 174, 0.1);
@@ -533,6 +796,43 @@ html {
     cursor: pointer;
 }
 
+.modal-button-call {
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 18, 18, 0.73);
+    z-index: 1;
+}
+
+.modal-window-call {
+    width: 810px;
+    height: 317px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.close-call {
+    height: 12px;
+    width: 12px;
+}
+
+.close-btn-call {
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/x.svg) no-repeat center;
+}
 
 .button-elipse {
     width: 40px;
@@ -967,6 +1267,7 @@ html {
 .topbut-a {
     position: fixed;
     margin-left: 1650px;
+    margin-bottom: 20px;
     text-align: center;
     padding-top: 10px;
     background: #2FD3AE;
@@ -1760,7 +2061,7 @@ html {
 .footer-form {
     margin-top: 30px;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     justify-content: space-between;
 }
@@ -1811,6 +2112,76 @@ html {
     cursor: pointer;
 }
 
+.modal-but-footer {
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 18, 18, 0.73);
+    z-index: 1;
+}
+
+
+.modal-window-foot {
+    position: relative;
+    width: 510px;
+    height: 423px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 60px;
+    overflow:hidden
+}
+
+.close-foot {
+    position: absolute;
+    left: 445px;
+    top: 45px;
+    height: 12px;
+    width: 12px;
+}
+
+.close-btn-foot {
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    height: 12px;
+    width: 12px;
+    background: url(../img/x.svg) no-repeat;
+    background-position: right;
+}
+.window-info {
+    display: flex;
+    margin-top: 50px;
+    margin-right: 45px;
+    
+}
+.ellipse-window {
+    background: rgba(47, 211, 174, 0.2);
+    border-radius: 50%;
+    width: 538px;
+height: 538px;
+margin-left: -200px;
+margin-top: -458px;
+
+}
+
+
+.p-window-foot {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 56px;
+margin-top: 54px;
+color: #000000;
+}
 .footer-container {
     display: flex;
     padding-top: 150px;
@@ -1877,12 +2248,17 @@ html {
 }
 
 .email-foot {
-    background: url(../img/Message_open.svg) no-repeat left / 24px 24px;
+    background: url(../img/Message_open.svg) no-repeat;
+    background-position: 0;
+    padding-left: 40px;
     margin-bottom: 30px;
 }
 
 .tel-foot {
-    background: url(../img/Phone_duotone.svg) no-repeat left / 24px 24px;
+    background: url(../img/Phone_duotone.svg) no-repeat;
+    background-position: 0;
+    padding-left: 40px;
+    margin-bottom: 30px;
 }
 
 .social-foot {
