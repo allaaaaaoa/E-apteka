@@ -2114,7 +2114,7 @@ html {
 
 .modal-but-footer {
     display: flex;
-    /* display: none; */
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
